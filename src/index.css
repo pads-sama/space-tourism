@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* color */
+  --black-clr: #0B0D17;
+  --light-purple-clr: #D0D6F9;
+  --white-clr: #ffffff;
+
+  /* typography */
+  /* headings */
+  --heading-1: 9.375rem;
+  --heading-2: 6.25rem;
+  --heading-3: 3.5rem;
+  --heading-4: 2rem;
+  --heading-5: 1.75rem;
+
+  /* subheadings */
+  --subheading-1: 1.75rem;
+  --subheading-2: 0.875rem;
+
+  /* body-text */
+  --body-text: 1.75rem;
+}
