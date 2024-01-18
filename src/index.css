@@ -1,3 +1,13 @@
+/* barlow condense*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* //barlow */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* bellefair */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,4 +32,83 @@
 
   /* body-text */
   --body-text: 1.75rem;
+
+  /* font-family */
+  --barlow-condense: "Barlow Condensed", sans-serif;
+  --barlow: "Barlow", sans-serif;
+  --bellefair: "Bellefair", serif;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black-clr);
+  color: var(--white-clr);
+}
+
+.transition {
+  transition: .6s ease-in-out;
+}
+
+.flex-items-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-items-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-Y-center {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-X-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blur-bg {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.774227142333984px);
+}
+
+.sidebar {
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  font-family: var(--barlow-condense);
+  font-weight: 400;
+}
+
+.div {
+  background-image: url('../src/assets/home/background-home-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.active {
+  border-bottom: 3px solid white
+}
+
+
+.btn {
+
+  height: 450px;
+  width: 450px;
+  border-radius: 450px;
+  opacity: 0.1036;
+  background: #FFF;
+  position: absolute;
+  inset: 0;
 }

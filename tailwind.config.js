@@ -5,6 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+
     extend: {
       fontSize:{
         // headings
@@ -20,12 +21,20 @@ export default {
 
         //body text
         bodyFs:"var(--body-text)",
+        fm: ["var(--fm)"]
       },
       colors:{
         primary: ["var(--black-clr)"],
         lightPurple: ["var(--light-purple-clr)"],
         light: ["var(--white-clr)"]
-      }
+      },
+      fontFamily:{
+        barlow: ["var(--barlow)"],
+        barlowCondense: ["var(--barlow-condense)"],
+        bellefair: ["var(--bellefair)"]
+
+      },
+     
     },
     
   },
